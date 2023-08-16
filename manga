@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マンガのカルーセル</title>
+    <!-- SlickのCSSを追加 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="manga-carousel">
+        <div><img src="path/to/manga_page1.jpg" alt="マンガ ページ1"></div>
+        <div><img src="path/to/manga_page2.jpg" alt="マンガ ページ2"></div>
+        <!-- 以下、他のページも同様に追加 -->
+    </div>
+
+    <!-- jQueryとSlickのスクリプトを追加 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.manga-carousel').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+</body>
+</html>
